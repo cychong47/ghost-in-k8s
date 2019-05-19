@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ghost
+spec:
+  type: NodePort
+  externalTrafficPolicy : Local
+  externalIPs : [192.168.1.100]
+  #LoadBalancer
+  selector:
+    app: ghost
+  ports:
+  - protocol: TCP
+    port: 2368
+    targetPort: 2368
