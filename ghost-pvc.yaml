@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: ghost-pv-claim
+  name: ghost-pvc
   labels:
     type: local
 spec:
